@@ -17,6 +17,6 @@ public class WeatherCommand implements CommandInterface {
         var rand = new Random();
         var conditions = new String[] {"stormy", "windy", "raining", "sunny"};
         var temp = rand.nextInt(25);
-        return String.format("The weather in %s is %s, current temperature is %d", intent.slots.get("Location"), conditions[rand.nextInt(conditions.length)], temp);
+        return String.format("The weather in %s is %s, current temperature is %d", intent.slots.get("location"), conditions[rand.nextInt(conditions.length)], temp);
     }
 }
